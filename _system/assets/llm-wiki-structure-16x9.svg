@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .bg { fill: #f7f4ee; }
+      .title { font-family: "PingFang SC", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif; font-size: 56px; font-weight: 800; fill: #172026; }
+      .subtitle { font-family: "PingFang SC", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif; font-size: 25px; fill: #53606b; }
+      .section-title { font-family: "PingFang SC", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif; font-size: 34px; font-weight: 800; fill: #172026; }
+      .folder { font-family: "SF Mono", "Menlo", "Consolas", monospace; font-size: 28px; font-weight: 800; fill: #172026; }
+      .body { font-family: "PingFang SC", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif; font-size: 24px; fill: #33414c; }
+      .small { font-family: "PingFang SC", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif; font-size: 20px; fill: #5c6872; }
+      .badge { font-family: "PingFang SC", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif; font-size: 19px; font-weight: 700; fill: #ffffff; }
+      .card { stroke: #26323a; stroke-width: 2.5; rx: 18; }
+      .thin { stroke: #7c8790; stroke-width: 2; fill: none; }
+      .arrow { stroke: #394854; stroke-width: 4; fill: none; marker-end: url(#arrow); }
+      .dash { stroke: #7c8790; stroke-width: 3; fill: none; stroke-dasharray: 8 10; marker-end: url(#arrow); }
+    </style>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="10" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#394854"/>
+    </marker>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#18232b" flood-opacity="0.13"/>
+    </filter>
+  </defs>
+
+  <rect class="bg" width="1920" height="1080"/>
+  <rect x="48" y="42" width="1824" height="996" rx="28" fill="#fffdf8" stroke="#d6cec2" stroke-width="2"/>
+
+  <text x="100" y="116" class="title">Obsidian LLM Wiki 模板结构</text>
+  <text x="102" y="162" class="subtitle">原始资料只读，LLM 维护 wiki，索引与日志让知识持续升级</text>
+
+  <g transform="translate(101,214)" filter="url(#shadow)">
+    <rect class="card" width="350" height="590" fill="#fff3cc"/>
+    <rect x="0" y="0" width="350" height="70" rx="18" fill="#c58a00"/>
+    <text x="28" y="45" class="badge">输入与证据层</text>
+    <text x="28" y="118" class="folder">INBOX/</text>
+    <text x="28" y="156" class="body">临时暂存资料</text>
+    <text x="28" y="190" class="small">还没决定是否长期保存</text>
+    <line x1="28" y1="226" x2="322" y2="226" class="thin"/>
+    <text x="28" y="278" class="folder">RAW/</text>
+    <text x="28" y="316" class="body">原始资料库</text>
+    <text x="28" y="350" class="small">文章、PDF 转写、网页剪藏</text>
+    <text x="28" y="382" class="small">默认只读，不在原文上改写</text>
+    <line x1="28" y1="424" x2="322" y2="424" class="thin"/>
+    <text x="28" y="474" class="folder">RAW/assets/</text>
+    <text x="28" y="512" class="body">本地附件与图片</text>
+    <text x="28" y="546" class="small">配合 Obsidian 附件路径</text>
+  </g>
+
+  <g transform="translate(535,214)" filter="url(#shadow)">
+    <rect class="card" width="530" height="590" fill="#e7f4ef"/>
+    <rect x="0" y="0" width="530" height="70" rx="18" fill="#28745f"/>
+    <text x="28" y="45" class="badge">LLM 维护的知识层</text>
+    <text x="28" y="118" class="folder">WIKI/</text>
+    <text x="28" y="156" class="body">总结、概念、实体、问题与综合分析</text>
+
+    <rect x="28" y="198" width="216" height="86" rx="12" fill="#ffffff" stroke="#78a99a" stroke-width="2"/>
+    <text x="48" y="233" class="folder" font-size="22">Sources/</text>
+    <text x="48" y="264" class="small">每篇原文的摘要</text>
+
+    <rect x="278" y="198" width="224" height="86" rx="12" fill="#ffffff" stroke="#78a99a" stroke-width="2"/>
+    <text x="298" y="233" class="folder" font-size="22">Concepts/</text>
+    <text x="298" y="264" class="small">反复出现的主题</text>
+
+    <rect x="28" y="314" width="216" height="86" rx="12" fill="#ffffff" stroke="#78a99a" stroke-width="2"/>
+    <text x="48" y="349" class="folder" font-size="22">Entities/</text>
+    <text x="48" y="380" class="small">人物、组织、地点</text>
+
+    <rect x="278" y="314" width="224" height="86" rx="12" fill="#ffffff" stroke="#78a99a" stroke-width="2"/>
+    <text x="298" y="349" class="folder" font-size="22">Synthesis/</text>
+    <text x="298" y="380" class="small">跨资料综合结论</text>
+
+    <rect x="28" y="430" width="216" height="86" rx="12" fill="#ffffff" stroke="#78a99a" stroke-width="2"/>
+    <text x="48" y="465" class="folder" font-size="22">Workflows/</text>
+    <text x="48" y="496" class="small">导入、查询、检查</text>
+
+    <rect x="278" y="430" width="224" height="86" rx="12" fill="#ffffff" stroke="#78a99a" stroke-width="2"/>
+    <text x="298" y="465" class="folder" font-size="22">首页.md</text>
+    <text x="298" y="496" class="small">用户浏览入口</text>
+  </g>
+
+  <g transform="translate(1148,214)" filter="url(#shadow)">
+    <rect class="card" width="350" height="590" fill="#e8edf8"/>
+    <rect x="0" y="0" width="350" height="70" rx="18" fill="#526fb1"/>
+    <text x="28" y="45" class="badge">导航与维护记录</text>
+    <text x="28" y="118" class="folder">index.md</text>
+    <text x="28" y="156" class="body">内容地图</text>
+    <text x="28" y="190" class="small">按类别列出页面和摘要</text>
+    <text x="28" y="222" class="small">回答问题前先读它</text>
+    <line x1="28" y1="260" x2="322" y2="260" class="thin"/>
+    <text x="28" y="312" class="folder">log.md</text>
+    <text x="28" y="350" class="body">追加式维护历史</text>
+    <text x="28" y="384" class="small">记录导入、查询、健康检查</text>
+    <text x="28" y="416" class="small">说明 wiki 如何演化</text>
+    <line x1="28" y1="454" x2="322" y2="454" class="thin"/>
+    <text x="28" y="506" class="folder">README.md</text>
+    <text x="28" y="544" class="body">仓库说明</text>
+  </g>
+
+  <g transform="translate(1580,214)" filter="url(#shadow)">
+    <rect class="card" width="240" height="590" fill="#f5e9f0"/>
+    <rect x="0" y="0" width="240" height="70" rx="18" fill="#9a5577"/>
+    <text x="24" y="45" class="badge">规则与配置</text>
+    <text x="24" y="118" class="folder" font-size="24">AGENTS.md</text>
+    <text x="24" y="154" class="body">维护宪法</text>
+    <text x="24" y="188" class="small">规定 LLM 怎么导入</text>
+    <text x="24" y="218" class="small">怎么查询、怎么检查</text>
+    <line x1="24" y1="256" x2="216" y2="256" class="thin"/>
+    <text x="24" y="306" class="folder" font-size="24">_system/</text>
+    <text x="24" y="342" class="body">模板与清单</text>
+    <text x="24" y="376" class="small">templates/</text>
+    <text x="24" y="406" class="small">checklists/</text>
+    <line x1="24" y1="444" x2="216" y2="444" class="thin"/>
+    <text x="24" y="494" class="folder" font-size="24">.obsidian/</text>
+    <text x="24" y="530" class="body">基础设置</text>
+  </g>
+
+  <path d="M 452 500 C 485 500, 500 500, 532 500" class="arrow"/>
+  <path d="M 1068 500 C 1100 500, 1116 500, 1146 500" class="arrow"/>
+  <path d="M 1580 500 C 1546 500, 1530 500, 1500 500" class="dash"/>
+  <path d="M 1580 350 C 1428 160, 735 160, 535 350" class="dash"/>
+
+  <g transform="translate(180,858)">
+    <rect x="0" y="0" width="1560" height="116" rx="18" fill="#ffffff" stroke="#d6cec2" stroke-width="2"/>
+    <text x="34" y="46" class="section-title">典型循环</text>
+    <text x="220" y="46" class="body">导入资料 → 生成 Sources 摘要 → 更新 Concepts / Entities / Synthesis → 刷新 index.md → 追加 log.md</text>
+    <text x="220" y="84" class="small">用户负责选资料和判断价值；Codex 负责总结、链接、归档和一致性维护。</text>
+  </g>
+</svg>
